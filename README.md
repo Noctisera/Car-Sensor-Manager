@@ -9,6 +9,7 @@ Once the repository has been cloned, you can run the sensor manager using the fo
 	./main <file_name>
 	
 The read file needs to have the following structure:
+
 <number_of_sensors>
 <type_of_sensor_1>
 <data_of_sensor_1>
@@ -29,25 +30,25 @@ A <pmu_sensor> needs to have the following structure:
 ## Usage
 The program has the following functions:
 
-1. print <index>: Prints the information of the given sensor
+* print <index>: Prints the information of the given sensor
 
-2. analyze <index>: Executes the corresponding operations of the given sensor
+* analyze <index>: Executes the corresponding operations of the given sensor
 
-3. clear: deletes all sensors that do not fit between the following conditions:
+* clear: deletes all sensors that do not fit between the following conditions:
 
-	Tire Sensor:
-	pressure: between 19 and 28 psi
-	temperature: between 0°C and 120°C
-	wear_level: between 0% and 100%
+>	Tire Sensor:
+>	pressure: between 19 and 28 psi
+>	temperature: between 0°C and 120°C
+>	wear_level: between 0% and 100%
 	
-	Power Management Unit Sensor:
-	voltage: between 10V and 20V
-	current: between -100A and 100A
-	power_consumption: between 0kW and 1000kW
-	energy_regen: between 0% and 100%
-	energy_storage: between 0% and 100%
+>	Power Management Unit Sensor:
+>	voltage: between 10V and 20V
+>	current: between -100A and 100A
+>	power_consumption: between 0kW and 1000kW
+>	energy_regen: between 0% and 100%
+>	energy_storage: between 0% and 100%
 	
-4. exit: Stops the program
+* exit: Stops the program
 
 The list of operations is the following:
 0. tire_pressure_status
@@ -58,6 +59,7 @@ The list of operations is the following:
 5. pmu_regenerate_energy
 6. pmu_get_energy_usage
 7. pmu_is_battery_healthy
+
 <tire_sensor> can have from 0 to 3 while <pmu_sensor> can have from 5 to 7.
 
 ## Implementation
