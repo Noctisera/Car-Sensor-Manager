@@ -5,8 +5,6 @@
 #include <stddef.h>
 #include <string.h>
 
-// ------- DO NOT MODIFY ------- //
-
 static void tire_pressure_status(void *data)
 {
     tire_sensor *t = (tire_sensor *)data;
@@ -172,8 +170,6 @@ void get_operations(void **operations)
     operations[6] = pmu_get_energy_usage;
     operations[7] = pmu_is_battery_healthy;
 }
-
-// ------- DO NOT MODIFY ------- //
 
 sensor *read_sensor_data(FILE *in) {
     sensor *aux_sensor;
