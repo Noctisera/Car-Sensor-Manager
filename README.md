@@ -29,11 +29,12 @@ A <pmu_sensor> needs to have the following structure:
 ## Usage
 The program has the following functions:
 
-print <index>: Prints the information of the given sensor
+1. print <index>: Prints the information of the given sensor
 
-analyze <index>: Executes the corresponding operations of the given sensor
+2. analyze <index>: Executes the corresponding operations of the given sensor
 
-clear: deletes all sensors that do not fit between the following conditions:
+3. clear: deletes all sensors that do not fit between the following conditions:
+
 	Tire Sensor:
 	pressure: between 19 and 28 psi
 	temperature: between 0°C and 120°C
@@ -46,7 +47,7 @@ clear: deletes all sensors that do not fit between the following conditions:
 	energy_regen: between 0% and 100%
 	energy_storage: between 0% and 100%
 	
-exit: Stops the program
+4. exit: Stops the program
 
 The list of operations is the following:
 0. tire_pressure_status
