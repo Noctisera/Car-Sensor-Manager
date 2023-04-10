@@ -37,15 +37,23 @@ The program has the following functions:
 * clear: deletes all sensors that do not fit between the following conditions:
 
 >	Tire Sensor:
+
 >	pressure: between 19 and 28 psi
+
 >	temperature: between 0°C and 120°C
+
 >	wear_level: between 0% and 100%
 	
 >	Power Management Unit Sensor:
+
 >	voltage: between 10V and 20V
+
 >	current: between -100A and 100A
+
 >	power_consumption: between 0kW and 1000kW
+
 >	energy_regen: between 0% and 100%
+
 >	energy_storage: between 0% and 100%
 	
 * exit: Stops the program
